@@ -10,3 +10,6 @@ This project is an example of a simple React app using a .NET backend. This proj
 
 ## Prerequisites
 In order to run this project, you will need .NET installed on your computer as well as Node. Make sure these are in place first.
+
+## Disclaimer
+This is just an example app for the development side of things only. This is not suitable for production environments as is.
