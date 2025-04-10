@@ -16,6 +16,9 @@ FROM mcr.microsoft.com/dotnet/aspnet:8.0
 WORKDIR /app
 COPY --from=build /app/backend/out .
 
+# ✅ Tell .NET to listen on all interfaces
+ENV ASPNETCORE_URLS=http://+:5000
+
 EXPOSE 5000
 
 ENTRYPOINT ["dotnet", "Backend.dll"]
